@@ -114,12 +114,6 @@ install_XrayR() {
         if [[ $? -ne 0 ]]; then
             echo -e "${red}下载 XrayR 失败，请确保你的服务器能够下载 Github 的文件${plain}"
             exit 1
-        fi
-    else
-        if [[ $1 == v* ]]; then
-            last_version=$1
-	else
-	    last_version="v"$1
 	fi
         url="https://github.com/XrayR-project/XrayR/releases/download/v0.8.9/XrayR-linux-64.zip"
         echo -e "开始安装 XrayR ${last_version}"
